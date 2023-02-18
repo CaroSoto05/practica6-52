@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <header></header>
+    <main >
+        <h2>Formulario</h2>
+        <form action="">
+            <fieldset id="try"b >
+                <legend>Datos generales</legend>
+                <div>
+                    <label for="lblNombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                </div>
+                
+                <div>
+                    <label for="lblEdad">Edad</label>
+                <input type="number" name="edad" id="edad">
+                </div>
+                
+                <div>
+                    <label for="cf">Color de Fondo</label>
+                    <input type="color" name="cf" id="cf">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="clave" id="clave">
+                </div>
+                <div> 
+                    <label for="info">textarea</label>
+                    <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="cmb">Opcion de pago</label>
+                    <select name="cmbmetodo_pago" id="cmbmetodo_pago">
+                        <option value="1">Dana</option>
+                        <option value="2">Claudia</option>
+                        <option value="3">Carolina</option>
+                        <option value="4">Alejandro</option>
+                        <option value="5">Adrian</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cmb">Opcion de pago Favorito</label>
+                    <select name="cmbmetodo_pago_fav" id="cmbmetodo_pago_fav" multiple>
+                        <option value="1">Dana</option>
+                        <option value="2">Claudia</option>
+                        <option value="3">Carolina</option>
+                        <option value="4">Alejandro</option>
+                        <option value="5">Adrian</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="lblvehiculo">Vehiculo</label>
+                    <select name="vehiculo" id="vehiculo">
+                        <optgroup label="Camionetas">
+                           <option value="6">Toyota</option>
+                        <option value="7">Silverado</option> 
+                        </optgroup>
+                        <optgroup label="Compactos">
+                            <option value="8">Versa</option>
+                            <option value="9">Sentra</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="edo_civil">¿Casado?</label>
+                    <input type="checkbox" name="edo_civil" id="edo_civil">
+                </div>
+                <div>
+                    <label for="foto">Archivo foto empleado</label>
+                    <input type="file" name="foto" id="foto">
+                </div>
+                <input type="submit" value="enviar">
+            </fieldset>
+        </form>
+
+        <h2>Tablas html</h2>
+        <table border="1px">
+            <tr>
+                <td>Actividad</td>
+
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Juevthes</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+            </tr>
+            <tr>
+                <td>Ir al gimnasio</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>
+        </table>
+        <br>
+        <table border="1px">
+            <tr>
+                <td>Actividad</td>
+
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+            </tr>
+            <tr>
+                <td>Ir al gimnasio</td>
+                <td>X</td>
+                <td>X</td>
+                <td colspan="2">X</td>
+                <td colspan="2">X</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>ir a la escuela</td>
+                <td colspan="5">X</td>
+                <td colspan="2">-</td>
+            </tr>
+            <tr>
+                <td>Jugar con los vatillos</td>
+                <td colspan="7" rowspan="2">X</td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>relleno</td>
+                <td>relleno</td>
+                <td>relleno</td>
+                <td>relleno</td>
+                <td>relleno</td>
+                <td>relleno</td>
+                <td>relleno</td>
+                <td>relleno</td>
+            </tr>
+        </table>
+        <br>
+        <table border="2px">
+            <thead>
+                <tr>
+                    <td colspan="8" style="color: green;"> Mi Itinerario</td>
+                </tr>
+                <tr>
+                    <td>Actividad</td>
+
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sabado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Ir al gimnasio</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td colspan="2">X</td>
+                    <td colspan="2">X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>ir a la escuela</td>
+                    <td colspan="5">X</td>
+                    <td colspan="2">-</td>
+                </tr>
+                <tr>
+                    <td>Jugar con los vatillos</td>
+                    <td colspan="7" rowspan="2">X</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td>relleno</td>
+                    <td>relleno</td>
+                    <td>relleno</td>
+                    <td>relleno</td>
+                    <td>relleno</td>
+                    <td>relleno</td>
+                    <td>relleno</td>
+                    <td>relleno</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="8">Elaborado por: Carolina Soto arellano </td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+    </main>
+    <aside></aside>
+    <footer>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis natus est, voluptatum reiciendis nihil aut? Aperiam sequi nobis, suscipit dignissimos sunt accusamus incidunt autem laborum ut dolor magnam voluptas?
+        </p>
+    </footer>
+</body>
+
+</html>
